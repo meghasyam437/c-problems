@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main(){
+    double x=12.345;
+    double y=99.999;
+    printf("%.3lf\n%.3lf",x,y);
+    return 0;
+
+}
