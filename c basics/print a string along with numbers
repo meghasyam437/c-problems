@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+   int age,count;
+   printf("age: %d",20);
+   printf("count: %d",5);
+    //Your Code goes here!
+    
+    return 0;
+}
