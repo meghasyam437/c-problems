@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int age;
+    scanf("%d",&age);
+    if(age>=18&&age<=72)
+    printf("driving licence eligible");
+    if(age<18)
+    printf("not eligible");
+    
+
+    return 0;
+}
