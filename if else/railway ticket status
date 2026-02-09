@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int ticket;
+
+
+    scanf("%d", &ticket);
+
+    
+    if(ticket<=5)
+    printf("confirmed");
+    else if(ticket=0)
+    printf("waiting list");
+
+else
+printf("invalid ");
+    return 0;
+}
+
