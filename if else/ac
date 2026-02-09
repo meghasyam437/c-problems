@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int temperature;
+
+
+    scanf("%d", &temperature);
+
+    
+    if (temperature < 20) {
+        printf("Heating Mode\n");
+    } else if (temperature <= 30) {
+        printf("Normal Mode\n");
+    } else {
+        printf("Cooling Mode\n");
+    }
+
+    return 0;
+}
+
