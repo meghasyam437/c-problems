@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int amount;
+
+    // Read input
+    scanf("%d", &amount);
+
+    // Check if the amount is a multiple of 100
+    if (amount % 100 == 0) {
+        printf("Valid Amount\n");
+    } else {
+        printf("Invalid Amount\n");
+    }
+
+    return 0;
+}
