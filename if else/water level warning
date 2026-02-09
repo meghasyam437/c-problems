@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int water_level;
+
+    // Read water level from user
+    scanf("%d", &water_level);
+
+    // Check if water level is above 90%
+    if (water_level > 90) {
+        printf("Overflow Warning\n");
+    } else {
+        printf("Safe Level\n");
+    }
+
+    return 0;
+}
