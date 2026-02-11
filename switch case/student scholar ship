@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    int type;
+    char catagory;
+    scanf("%d %c",&type,&catagory);
+    switch(type){
+        case 1:
+        if(catagory=='R')
+            printf("5000");
+        else if(catagory=='S')
+            printf("3000");
+        break;
+        case 2:
+        if(catagory=='R')
+            printf("9000");
+        else if(catagory=='S')
+            printf("7000");
+        break;
+        default:
+        printf("Invalid catagory");
+    }
+    return 0;
+}
