@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int vehicle_category,vehicle_age;
+    scanf("%d %d",&vehicle_category,&vehicle_age);
+    int insurance;
+    switch(vehicle_category){
+        case 1:
+        if(vehicle_age<=5)
+insurance=1500;
+else
+insurance=2500;
+break;
+case 2:
+if(vehicle_age<=5)
+insurance=4000;
+else
+insurance=6000;
+break;
+default:
+printf("invalid vehicle_type");
+    }
+    printf("%d",insurance);
+    return 0;
+}
