@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int vehicle_type,trips;
+    scanf("%d %d",&vehicle_type,&trips);
+    int charge=0;
+    switch(vehicle_type){
+        case 1:
+        if(trips==1)
+        charge=100;
+        else if(trips>=2&&trips<=8)
+        charge=800;
+        else 
+        charge=800;;
+        break;
+        case 2:
+charge=trips*240;
+break;
+default:
+printf("invalid vehicle type");
+    }
+printf("%d",charge);
+    
+    return 0;
+}
