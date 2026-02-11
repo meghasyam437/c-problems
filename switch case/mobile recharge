@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+int plantype;
+int paymentmode;
+int cost=0,cashback=0;
+scanf("%d %d",&plantype,&paymentmode);
+switch(plantype){
+    case 1:
+    cost=199;
+    break;
+    case 2:
+    cost=399;
+    break;
+}
+switch(paymentmode){
+
+    case 11:
+    case 12:
+    cashback=20;
+    break;
+    case 13:
+    cashback=0;
+    break;
+}
+printf("%d",cost-cashback);
+    return 0;
+}
