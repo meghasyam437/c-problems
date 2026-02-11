@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int orderamount;
+    int speedtype;
+    int charge=0;
+    scanf("%d %d",&orderamount,&speedtype);
+    switch(speedtype){
+        case 1:
+        charge=50;
+        break;
+        case 2:
+        if(charge>=1000)
+        charge=0;
+        else
+        charge=100;
+        
+    }
+    printf("%d",charge);
+    return 0;
+}
