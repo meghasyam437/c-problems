@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int code,experience;
+    scanf("%d %d",&code,&experience);
+    int salary=0;
+    int bonous ;
+
+    switch(bonous){
+        case 1:
+    salary=5000;
+        break;
+        case 2:
+        if(experience>=3)
+        salary=experience*3;
+        else 
+        printf("invalid");
+        break;
+        printf("invalid bonous");
+
+    }
+    printf("%d",salary);
+
+
+    
+    return 0;
+}
