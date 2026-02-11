@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int account_type;
+    int years;
+    float savings=0;
+    scanf("%d %d",&account_type,&years);
+    switch(account_type){
+case 1:
+savings=0.04;
+break;
+case 2:
+if(years<=3)
+savings=0.05;
+else
+savings=0.07;
+    }
+    printf("%.2f",savings);
+    return 0;
+}
