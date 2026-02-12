@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main() {
+int attempt_number,marks;
+scanf("%d %d",&attempt_number,&marks);
+switch(attempt_number){
+    case 1:
+    if(marks>=80)
+    printf("excellent");
+    else
+    printf("not qualified");
+    break;
+    case 2:
+    if(marks>=60)
+    printf("good");
+    else
+    printf("other wise not qualified");
+    break;
+    case 3:
+    marks<=60;
+    printf("need improvment");
+    break;
+    default:
+    printf("invalid");
+}
+printf("%d",marks);
+    return 0;
+}
