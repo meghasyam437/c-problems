@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+int flight_class,weight;
+int charge=0;
+scanf("%d %d",&flight_class,&weight);    //Your Code goes here!
+  switch(flight_class){
+    case 1:
+charge=weight*300;
+break;
+case 2:
+if(weight<=3)
+charge=0;
+else
+charge=(weight-3)*300;
+break;
+  }  
+  if(charge==0)
+  printf("free");
+  else
+  printf("%d",charge);
+    return 0;
+}
