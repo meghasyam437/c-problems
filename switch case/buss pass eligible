@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+int category,distance;
+scanf("%d %d",&category,&distance);
+switch(category){
+    case 1:
+  if(distance<=30)
+    printf("eligible");
+    else
+    printf("eligible with extra fee");
+    break;
+    case 2:
+    if(distance<=30)
+    printf("eligible");
+    else
+    printf("not eligible");
+    break;
+    default:
+    printf("invalid category");
+}
+printf("%d",distance);
+    return 0;
+}
