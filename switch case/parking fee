@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+int vehicle_type,hours;
+int fee;
+scanf("%d %d",&vehicle_type,&hours);
+switch(vehicle_type){
+    case 1:
+    fee=hours*10;
+    break;
+    case 2:
+    fee=hours*20;
+    break;
+    default:
+    fee=hours*20;
+    printf("invalid vehicle_type");
+}
+printf("%d",fee);
+    return 0;
+}
