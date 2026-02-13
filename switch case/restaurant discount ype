@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+  int customer_type,bill_amount;
+    scanf("%d %d",&customer_type,&bill_amount);
+   int total_price=0;
+    switch(customer_type){
+        case 1:
+        total_price=bill_amount-(bill_amount*5/100);
+        break;
+        case 2:
+        total_price=bill_amount-(bill_amount*15/100);
+        break;
+        default:
+        total_price=bill_amount;
+    }
+    printf("%d",total_price);
+    return 0;
+}
