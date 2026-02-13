@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+  int connection_type,units;
+  scanf("%d %d",&connection_type,&units);
+  int bill;
+  switch(connection_type){
+    case 1:
+   if(units<=30)
+    bill=units*5;
+    else
+    bill=units*8;
+    break;
+    case 2:
+bill=units*10;
+default:
+printf("invalid connection_types");
+  } 
+  printf("%d",bill); //Your Code goes here!
+    
+    return 0;
+}
