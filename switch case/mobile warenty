@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int warentycategory;
+    scanf("%d", &warentycategory);
+
+    switch (warentycategory) {
+        case 1:
+           printf("under warenty");
+           break;
+           case 2:
+           printf("limited warenty");
+           break;
+           default:
+           printf("out of waranty"); 
+    }
+    printf("%d",warentycategory);
+    return 0;
+}
