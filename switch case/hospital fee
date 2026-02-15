@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int doctortype,fee=0;
+    scanf("%d",&doctortype);
+    switch(doctortype){
+        case 1:
+        fee=500;
+        break;
+        case 2:
+        fee=1200;
+        break;
+        
+
+defult:
+printf("invalid");
+    }
+    printf("%d",fee);
+        return 0;
+}
