@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int plantype,mbps;
+    scanf("%d",&plantype);
+    switch(plantype){
+        case 1:
+mbps=40;
+break;
+case 2:
+mbps=100;
+break;
+case 3:
+mbps=300;
+break;
+default:
+printf("invalid");
+    }
+    printf("%d",mbps);
+        return 0;
+}
