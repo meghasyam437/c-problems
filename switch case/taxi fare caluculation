@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+  int vehicle_type,distance;
+  scanf("%d %d",&vehicle_type,&distance);
+  int fare=0;
+  switch(vehicle_type){
+case 1:
+fare=distance*10;
+break;
+case 2:
+fare=distance*15;
+break;
+case 3:
+fare=distance*20;
+break;
+default:
+printf("invalid");
+  }  
+  printf("%d",fare);
+  return 0;
+}
+
