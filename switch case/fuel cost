@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int fueltype,litres;
+    int fuelcost;
+    scanf("%d %d",&fueltype,&litres);
+    switch(fueltype){
+        case 1:
+fuelcost=litres*105;
+break;
+case 2:
+fuelcost=litres*92;
+break;
+case 3:
+fuelcost=litres*85;
+break;
+default:
+printf("invalid");
+    }
+    printf("%d",fuelcost);
+        return 0;
+}
+
