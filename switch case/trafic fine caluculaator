@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int violation_type;
+    int fine;
+    scanf("%d",&violation_type);
+    switch(violation_type){
+        case 1:
+        fine=1000;
+        break;
+        case 2:
+        fine=1500;
+        break;
+        case 3:
+        fine=3000;
+        break;
+        default:
+        printf("invalid violaation_type");
+    }
+    printf("%d",fine);
+    return 0;
+}
+
