@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+  int delivery_mode,charge=0;
+  scanf("%d",&delivery_mode); 
+  switch(delivery_mode){
+    case 1:
+    charge=40;
+    break;
+    case 2:
+    charge=120;
+    break;
+    case 3:
+    charge=0;
+    default:
+    printf("invalid delivery_mode");
+  }
+   printf("%d",charge); 
+    return 0;
+}
