@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int a=0,b=1,next;
+    int N;
+    scanf("%d",&N);
+    if(N>=1){
+        printf("%d",a);
+    }
+    if(N>=2){
+        printf("%d",b);
+    }
+    for(int i=3;i<=N;i++){
+        next=a+b;
+        a=b;
+        b=next;
+        printf(" %d",next);
+    }
+    return 0;
+}
