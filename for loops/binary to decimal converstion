@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int n,decimal=0,base=1,digits;
+    scanf("%d",&n);
+    for(;n>0;n=n/10){
+        digits=n%10;
+        decimal=decimal+digits*base;
+        base = base*2;
+    }
+    printf("%d",decimal);
+    return 0;
+}
