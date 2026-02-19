@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    int salary,absent_days,final_salary;
+    scanf("%d %d",&salary,&absent_days);
+    for(int i=1;i<salary;i++){
+        final_salary=salary-(absent_days*100);
+
+    }
+    printf("%d",final_salary);
+    return 0;
+}
