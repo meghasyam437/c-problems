@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    int voltage[100];
+    int minVoltage;
+    int lowEvents = 0;
+    scanf("%d", &n);
+    for(i = 0; i < n; i++) {
+        scanf("%d", &voltage[i]);
+    }
+    minVoltage = voltage[0];
+    for(i = 0; i < n; i++) {
+        if(voltage[i] < minVoltage) {
+            minVoltage = voltage[i];
+        }
+
+        if(voltage[i] < 210) {  
+            lowEvents++;
+        }
+    }
+    printf("Minimum Voltage: %d\n", minVoltage);
+    printf("Low Voltage Events: %d\n", lowEvents);
+
+    return 0;
+}
