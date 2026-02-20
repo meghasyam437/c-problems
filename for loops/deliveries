@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int n,delay_minutes;
+    scanf("%d",&n);
+    int total_delay,delayed_deliveries=0;
+    for(int i=0;i<n;i++){
+        scanf("%d",&delay_minutes);
+        total_delay+=delay_minutes;
+        if(delay_minutes>30)
+        delayed_deliveries++;
+    }
+    printf("%d %d",total_delay,delayed_deliveries);
+}
