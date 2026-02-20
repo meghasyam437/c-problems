@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int n,fuelprice_perday;
+    scanf("%d",&n);
+    int highest_price=0,highprice_days=0;
+    for(int i=0;i<n;i++){
+        scanf("%d",&fuelprice_perday);
+        if(fuelprice_perday>100)
+        highprice_days++;
+        if(fuelprice_perday>highest_price)
+        highest_price=fuelprice_perday;
+    }
+    printf("%d %d",highest_price,highprice_days);
+    return 0;
+}
