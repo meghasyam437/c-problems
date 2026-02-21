@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int n,totaldata;
+    scanf("%d  %d",&n,&totaldata);
+    int usage[n],successfuldays=0;
+for(int i=0;i<n;i++){
+    scanf("%d",&usage[n]);
+}
+    for(int i=0;i<n;i++){
+        if(totaldata-usage[i]>=0){
+            totaldata-=usage[i];
+            successfuldays++;
+        }else{
+            totaldata-=usage[i];
+            break;
+        }
+    }
+printf("%d %d",totaldata,successfuldays);
+
+    return 0;
+}data 
