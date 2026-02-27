@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() {
+for(char ch='e';ch>='a';ch--){
+    for(char CH='a';CH<'e';CH++){
+    printf(" %c ",ch);
+}
+printf("\n");
+}
+return 0;
+}
