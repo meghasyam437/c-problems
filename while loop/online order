@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    int N;
+    int i = 0;
+    int successful = 0,cancelled=0,order;
+    scanf("%d", &N);
+    while(i < N) {
+        scanf("%d", &order);
+        if(order == 1) {
+            successful++;
+        } else if(order == 0) {
+            cancelled++;
+        }
+        i++;
+    }
+    printf("%d %d",successful,cancelled);
+    if(cancelled > successful) {
+        printf("Risk");
+    } else {
+        printf("safe");
+    }
+    return 0;
+}
