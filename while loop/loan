@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+    int n,payment;
+    int i=0;
+    int currentstreak=0;
+    int longestdefaultstreak;
+    scanf("%d",&n);
+    while(i<n){
+        scanf("%d",&payment);
+if(payment==0){
+currentstreak++;
+}
+if(currentstreak>longestdefaultstreak){
+    longestdefaultstreak=currentstreak;
+}else{
+    currentstreak=0;
+}
+i++;   
+} 
+printf("%d",longestdefaultstreak);
+    return 0;
+}
