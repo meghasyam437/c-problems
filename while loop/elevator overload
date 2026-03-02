@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+    int maxweight,n;
+    int weight;
+    int totalweight=0;
+    int count=0;
+    int i=0;
+    scanf("%d %d",&maxweight,&n);
+    while(i<n){
+        scanf("%d",&weight);
+        if(totalweight+weight>maxweight){
+            break;
+        }
+        totalweight+=weight;
+        count++;
+        i++;
+    }
+    printf("%d",count);
+    if(i<n){
+        printf("yes");
+    }
+        else{
+            printf("no");
+        }
+    
+}
