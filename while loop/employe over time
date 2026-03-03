@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int n;
+    int hours;
+    scanf("%d",&n);
+    int i=0;
+    int total=0,burnoutdays=0;
+    while(i<n){
+        scanf("%d",&hours);
+        total+=hours;
+        if(hours>4){
+            burnoutdays++;
+        }
+        i++;
+    }
+    printf("%d %d",total,burnoutdays);
+    return 0;
+}
