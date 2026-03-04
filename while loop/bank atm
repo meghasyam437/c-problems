@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+    int ATMcash, N;
+    int withdrawal;
+    int count = 0;
+    int i = 0;
+    scanf("%d", &ATMcash);
+    scanf("%d", &N);
+    while(i < N) {
+        scanf("%d", &withdrawal);
+        if(ATMcash >= withdrawal) {
+            ATMcash = ATMcash - withdrawal;
+            count++;
+        }
+        i++;
+    }
+    printf("%d", count);
+    printf("%d", ATMcash);
+    return 0;
+}
