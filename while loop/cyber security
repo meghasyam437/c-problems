@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    int attempt = 0;
+    int input;
+    int consecutiveFail = 0;
+    int totalFail = 0;
+    int lockAttempt = -1;
+
+    while (attempt < N) {
+        scanf("%d", &input);
+        attempt++;
+
+        if (input == 0) {
+            consecutiveFail++;
+            totalFail++;
+        } else {
+            consecutiveFail = 0;
+        }
+
+        if (consecutiveFail == 3) {
+            lockAttempt = attempt;
+            break;
+        }
+    }
+
+    printf("%d %d", totalFail,lockAttempt);
+
+
+    return 0;
+}
