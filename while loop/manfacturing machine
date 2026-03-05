@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+    int n,vibration;
+    int i=0;
+    int unsafecount=0;
+    int breakdown=-1;
+    scanf("%d",&n);
+    while(i<n){
+        scanf("%d",&vibration);
+        if(vibration>70){
+            unsafecount++;
+        }
+        if(vibration>80&&breakdown==-1){
+            breakdown=i+1;
+        }
+        i++;
+    }
+    printf("%d %d",breakdown,unsafecount);
+    return 0;
+}
