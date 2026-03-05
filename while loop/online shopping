@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int walletbalance,n;
+    int amounts;
+    int successfullpurchase=0;
+    int i=0;
+    scanf("%d %d",&walletbalance,&n);
+    while(i<n){
+        scanf("%d",&amounts);
+if(walletbalance>=amounts){
+    walletbalance-=amounts;
+    successfullpurchase++;
+}else{
+    break;
+
+}
+i++;
+    }
+printf("%d %d",successfullpurchase,walletbalance);
+    return 0;
+}
