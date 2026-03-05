@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+    int N, i = 0;
+    int vehicles;
+    int longestStreak = 0,currentStreak = 0,congestionMinutes = 0;;
+    scanf("%d", &N);
+    while (i < N) {
+        scanf("%d", &vehicles);
+        if (vehicles > 20) {
+            congestionMinutes++;
+            currentStreak++;
+            if (currentStreak > longestStreak) {
+                longestStreak = currentStreak;
+            }
+        } else {
+            currentStreak = 0;
+        }
+        i++;
+    }
+    printf("%d %d", congestionMinutes,longestStreak);
+    return 0;
+}
