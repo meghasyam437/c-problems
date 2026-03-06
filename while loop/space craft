@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main() {
+    int fuel, N;
+    scanf("%d", &fuel);
+    scanf("%d", &N);
+    int burn[N];
+    int i = 0;
+    while(i < N) {
+        scanf("%d", &burn[i]);
+        i++;
+    }
+    int stage = 0;
+    int emergencyStage = -1;
+    int wastedFuel = 0;
+    i = 0;
+    while(i < N) {
+        fuel = fuel - burn[i];
+        if(fuel < 0) {
+            emergencyStage = i + 1;
+            wastedFuel = -fuel;
+            break;
+        }
+        i++;
+    }
+    printf("%d %d", emergencyStage,wastedFuel);
+    return 0;
+}
