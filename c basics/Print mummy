@@ -1,0 +1,5 @@
+#include<stdio.h>
+int main(){
+printf("mummy");
+return 0;
+}
