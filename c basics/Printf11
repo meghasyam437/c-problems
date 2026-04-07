@@ -1,0 +1,5 @@
+#include<stdio.h>
+int main()
+ptintf("avinash");
+return 0;
+}
