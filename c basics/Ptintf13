@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main(){
+float a = 3.5;
+ptintf("%f",a);
+return 0;
+}
