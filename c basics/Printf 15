@@ -1,0 +1,5 @@
+#include<stdio.h>
+int main(){
+ptintf("suba");
+return 0;
+}
