@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, choice, sum;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("1. Addition\n");
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    switch(choice) {
+        case 1:
+            sum = a + b;
+            printf("Sum = %d", sum);
+            break;
+
+        default:
+            printf("Invalid choice");
+    }
+
+    return 0;
+}
