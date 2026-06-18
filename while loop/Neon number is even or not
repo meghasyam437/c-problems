@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, square, sum = 0, rem;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    square = num * num;
+    int temp = square;
+
+    while(temp > 0)
+    {
+        rem = temp % 10;
+        sum = sum + rem;
+        temp = temp / 10;
+    }
+
+    if(sum == num)
+    {
+        printf("%d is a Neon Number\n", num);
+
+        if(num % 2 == 0)
+            printf("It is Even");
+        else
+            printf("It is Odd");
+    }
+    else
+    {
+        printf("%d is not a Neon Number", num);
+    }
+
+    return 0;
+}
