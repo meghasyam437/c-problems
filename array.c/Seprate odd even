@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    int arr[100], n, i;
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+    printf("Enter the array elements:\n");
+    for(i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    printf("Positive elements are:\n");
+    for(i = 0; i < n; i++) {
+        if(arr[i] > 0) {
+            printf("%d ", arr[i]);
+        }
+    }
+    printf("\nNegative elements are:\n");
+    for(i = 0; i < n; i++) {
+        if(arr[i] < 0) {
+            printf("%d ", arr[i]);
+        }
+    }
+    return 0;
+}
