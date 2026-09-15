@@ -1,0 +1,21 @@
+#include <math.h>
+#include <stdio.h>
+
+int main() {
+    char s[1000];
+    int n;
+    float f;
+    int ff;
+
+    fgets(s, sizeof(s), stdin);
+    scanf("%d", &n);
+    scanf("%f", &f);
+
+    ff = (int)floor(f);
+
+    printf("%s", s);
+    printf("%d\n", n);
+    printf("%d\n", ff);
+
+    return 0;
+}
