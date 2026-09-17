@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int n, m;
+    scanf("%d %d", &n, &m);
+
+    if (n < m)
+        printf("less");
+    else if (n == m)
+        printf("equal");
+    else
+        printf("greater");
+
+    return 0;
+}
