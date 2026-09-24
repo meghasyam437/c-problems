@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main{
+public static void main (String[] args) {
+    Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int square=n*n;
+        int x=n;
+        int c=0;
+        while(x>0){
+            c++;
+            x/=10;
+        }
+        int p=1;
+        for(int i=1;i<=c;i++){
+            p*=10;
+        }
+        if(square%p==n){
+            System.out.println("Automorphic");
+        }else{
+            System.out.println("Not Automorphic");
+        }
+}
+}
