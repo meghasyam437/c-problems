@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define TABLE_SIZE 10007
+
+typedef struct Node {
+    int key;
+    int index;
+    struct Node* next;
+} Node;
+
+int hash(int key) {
+    return abs(key) % TABLE_SIZE;
+}
+
+int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
+    Node* hashTable[TABLE_SIZE] = {NULL};
+    int* result = (int*)malloc(2 * sizeof(int));
+    *returnSize = 2;
+
+    for (int i = 0; i < numsSize; i++) {
+        int complement = target - nums[i];
+        int compHash = hash(complement);
+
+        // Check if complement already exists in the hash table
+        Node* curr = hashTable[compHash];
+        while (curr != NULL) {
+            if (curr->key == complement) {
+                result[0] = curr->index;
+                result[1] = i;
+
+                // Free memory before returning
+                for (int j = 0; j < TABLE_SIZE; j++) {
+                    Node* temp = hashTable[j];
+                    while (temp) {
+                        Node* toFree = temp;
+                        temp = temp->next;
+                        free(toFree);
+                    }
+                }
+                return result;
+            }
+            curr = curr->next;
+        }
+
+        // Insert current number into the hash table
+        int currHash = hash(nums[i]);
+        Node* newNode = (Node*)malloc(sizeof(Node));
+        newNode->key = nums[i];
+        newNode->index = i;
+        newNode->next = hashTable[currHash];
+        hashTable[currHash] = newNode;
+    }
+
+    return result;
+}
